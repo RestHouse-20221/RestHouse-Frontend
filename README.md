@@ -3,4 +3,4 @@
 Commands to follow:
 
 First command: npm i
-Secont commando: npm run dev
+Second commando: npm run dev

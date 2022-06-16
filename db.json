@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "name": "Manuel Prado",
+      "description": "Chef, expert in peruvian food and mexican food",
+      "rating": 10,
+      "id": 1
+    },
+    {
+      "name": "Oscar Antayhua",
+      "description": "Software Engeeniering, expert doing websites",
+      "rating": "9",
+      "id": 2
+    },
+    {
+      "name": "Claudia Garcia",
+      "description": "Gimnastic, i'm a good teacher and i speak spanish, english and french",
+      "rating": "7",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

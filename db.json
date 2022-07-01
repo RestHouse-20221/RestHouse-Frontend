@@ -2,24 +2,30 @@
   "traveler": [
     {
       "name": "Manuel Prado",
-      "skills": "Chef, expert in peruvian food and mexican food",
+      "description": "Chef, expert in peruvian food and mexican food",
       "rating": 10,
       "id": 1
     },
     {
       "name": "Oscar Antayhua",
-      "skills": "Software Engeeniering, expert doing websites",
+      "description": "Software Engeeniering, expert doing websites",
       "rating": "9",
       "id": 2
     },
     {
       "id": 3,
       "name": "Claudia Garcia",
-      "skills": "Gimnastic, i'm a good teacher and i speak spanish, english and french",
+      "description": "Gimnastic, i'm a good teacher and i speak spanish, english and french",
       "rating": "2"
     }
   ],
   "hosts": [
+    {
+      "id": 1,
+      "name": "Aldair Chuman",
+      "needs": "I need a person who knows how to cook",
+      "rating": 7
+    },
     {
       "name": "Mathyu Cardozo",
       "needs": "I need a person who helps me to clean my house",
@@ -31,12 +37,6 @@
       "needs": "I need a person who loves teaching",
       "rating": "6",
       "id": 3
-    },
-    {
-      "name": "Aldair Chuman",
-      "needs": "I need a person who knows how to cook",
-      "rating": "7",
-      "id": 4
     }
   ],
   "comments": [],

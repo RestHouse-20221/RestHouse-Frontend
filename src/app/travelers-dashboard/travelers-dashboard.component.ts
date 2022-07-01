@@ -41,7 +41,7 @@ showAddName!:boolean;
   this.formValue=this.formBuilder.group({
 
   name:[''],
-  skills:[''],
+  description:[''],
   rating:[''],
       
     })  
@@ -53,7 +53,7 @@ postTravelersDetails(){
 this.travelersModelObj.id=this.formValue.value.id ;
 
   this.travelersModelObj.name=this.formValue.value.name;
-  this.travelersModelObj.skills=this.formValue.value.skills;
+  this.travelersModelObj.description=this.formValue.value.description;
   this.travelersModelObj.rating=this.formValue.value.rating;
 
   let cancel=document.getElementById("cancel");
@@ -89,7 +89,7 @@ updateTravelers(row:any){
   this.showAddName=false;
   this.travelersModelObj.id=row.id;
   this.formValue.controls['name'].setValue(row.name);
-  this.formValue.controls['skills'].setValue(row.skills);
+  this.formValue.controls['description'].setValue(row.description);
   this.formValue.controls['rating'].setValue(row.rating);
 
 }
@@ -97,7 +97,7 @@ updateTravelers(row:any){
 updateTravelersDetails(){
 
   this.travelersModelObj.name=this.formValue.value.name;
-  this.travelersModelObj.skills=this.formValue.value.skills;
+  this.travelersModelObj.description=this.formValue.value.description;
   this.travelersModelObj.rating=this.formValue.value.rating;
   this.api.updateData(this.travelersModelObj,this.travelersModelObj.id).subscribe(a=>{
     alert("Traveler updated Succesfully");

@@ -41,7 +41,7 @@ showAddName!:boolean;
   this.formValue=this.formBuilder.group({
 
   name:[''],
-  description:[''],
+  needs:[''],
   rating:[''],
       
     })  
@@ -53,7 +53,7 @@ postHostsDetails(){
 this.hostsModelObj.id=this.formValue.value.id ;
 
   this.hostsModelObj.name=this.formValue.value.name;
-  this.hostsModelObj.description=this.formValue.value.description;
+  this.hostsModelObj.needs=this.formValue.value.needs;
   this.hostsModelObj.rating=this.formValue.value.rating;
 
   let cancel=document.getElementById("cancel");
@@ -89,7 +89,7 @@ updateHosts(row:any){
   this.showAddName=false;
   this.hostsModelObj.id=row.id;
   this.formValue.controls['name'].setValue(row.name);
-  this.formValue.controls['description'].setValue(row.description);
+  this.formValue.controls['needs'].setValue(row.needs);
   this.formValue.controls['rating'].setValue(row.rating);
 
 }
@@ -97,7 +97,7 @@ updateHosts(row:any){
 updateHostsDetails(){
 
   this.hostsModelObj.name=this.formValue.value.name;
-  this.hostsModelObj.description=this.formValue.value.description;
+  this.hostsModelObj.needs=this.formValue.value.needs;
   this.hostsModelObj.rating=this.formValue.value.rating;
   this.api.updateData(this.hostsModelObj,this.hostsModelObj.id).subscribe(a=>{
     alert("Host updated Succesfully");

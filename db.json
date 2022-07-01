@@ -23,18 +23,18 @@
     {
       "id": 1,
       "name": "Aldair Chuman",
-      "description": "I need a person who knows how to cook",
+      "needs": "I need a person who knows how to cook",
       "rating": 7
     },
     {
       "name": "Mathyu Cardozo",
-      "description": "I need a person who helps me to clean my house",
+      "needs": "I need a person who helps me to clean my house",
       "rating": "10",
       "id": 2
     },
     {
       "name": "Gonzalo Prado",
-      "description": "I need a person who loves teaching",
+      "needs": "I need a person who loves teaching",
       "rating": "6",
       "id": 3
     }

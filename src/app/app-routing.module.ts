@@ -5,8 +5,7 @@ import { TravelersDashboardComponent } from './travelers-dashboard/travelers-das
 import { HostsDashboardComponent } from './hosts-dashboard/hosts-dashboard.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HostsDashboardComponent },
   { path: 'hosts', component: HostsDashboardComponent },
   { path: 'travelers', component: TravelersDashboardComponent}
 ];

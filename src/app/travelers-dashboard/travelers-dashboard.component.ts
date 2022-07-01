@@ -7,8 +7,7 @@ import { TravelersModel } from './travelers-dashboard.model';
   selector: 'app-travelers-dashboard',
    
   providers: [ApiService  ],
-  templateUrl: './travelers-dashboard.component.html',
-  styleUrls: ['./travelers-dashboard.component.css']
+  templateUrl: './travelers-dashboard.component.html'
 })
 export class TravelersDashboardComponent implements OnInit {
 travelersModelObj:TravelersModel=new TravelersModel();

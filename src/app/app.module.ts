@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 
 // COMPONENTS
 import { TravelersDashboardComponent } from './travelers-dashboard/travelers-dashboard.component';
+import { HostsDashboardComponent } from './hosts-dashboard/hosts-dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TravelersDashboardComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    HostsDashboardComponent
   ],
   imports: [
     BrowserModule,

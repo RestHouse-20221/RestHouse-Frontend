@@ -5,7 +5,7 @@ import {map} from 'rxjs/operators'
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class ApiServiceHosts {
   constructor(private http:HttpClient) { 
 
 
@@ -13,27 +13,27 @@ export class ApiService {
   }
   
   postData(data:any){
-    return this.http.post<any>("http://localhost:3000/traveler",data).pipe(map((res:any)=>{
+    return this.http.post<any>("http://localhost:3000/hosts",data).pipe(map((res:any)=>{
      return res;
   }))
 
 }
   
   getData(){
-    return this.http.get<any>("http://localhost:3000/traveler").pipe(map((res:any)=>{
+    return this.http.get<any>("http://localhost:3000/hosts").pipe(map((res:any)=>{
      return res;
   }))
   
 }
 
 updateData(data:any,id:number){
-  return this.http.put<any>("http://localhost:3000/traveler/"+id,data).pipe(map((res:any)=>{
+  return this.http.put<any>("http://localhost:3000/hosts/"+id,data).pipe(map((res:any)=>{
    return res;
 }))
 }
 
 deleteData(id:number){
-  return this.http.delete<any>("http://localhost:3000/traveler/"+id).pipe(map((res:any)=>{
+  return this.http.delete<any>("http://localhost:3000/hosts/"+id).pipe(map((res:any)=>{
    return res;
 }))
 }

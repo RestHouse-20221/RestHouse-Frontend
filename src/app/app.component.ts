@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularSimpleCrudOperation';
+  title = 'RestHouse';
 
   menuVariable:boolean = false;
   menu_icon_variable:boolean = false;
